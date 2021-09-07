@@ -1,0 +1,112 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	position: relative;
+	font-family: $default-font;
+	font-size: $default-font-size;
+	font-weight: $default-font-weight;
+	font-style: $default-font-style;
+	line-height: $default-line-height;
+	color: $default-text-color;
+	background-color: $body-bg;
+	min-width: 320px;
+}
+
+.layout {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+
+	.container {
+		width: 1210px;
+		max-width: 1210px;
+
+		@media all and (max-width: 1210px) {
+			width: 100%;
+		}
+	}
+}
+
+.block-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+h1 {
+	font-size: 80px;
+	line-height: 83px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 0 0 57px;
+
+	@media #{$sm-max} {
+		margin-bottom: 28px;
+	}
+
+	@media #{$xs-max} {
+		font-size: 40px;
+	}
+}
+
+h2, h4 {
+	font-size: 20px;
+	line-height: 23px;
+	text-transform: uppercase;
+	margin: 0 0 25px;
+
+	@media #{$xs-max} {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+h3 {
+	font-size: 20px;
+	line-height: 23px;
+
+	@media #{$xs-max} {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+.title {
+	position: relative;
+	font-size: 0;
+
+	&:after {
+		content: '';
+		display: inline-block;
+		height: 5px;
+		width: 57px;
+		background: $brand-color;
+		margin-top: 12px;
+
+		@media #{$xs-max} {
+			margin-top: 6px;
+		}
+	}
+
+	span {
+		font-size: 20px;
+		display: block;
+	}
+}
+
+.section {
+	padding: 145px 0 100px;
+
+	@media #{$sm-max} {
+		padding: 70px 0 50px;
+	}
+
+	@media #{$xs-max} {
+		padding: 50px 0;
+	}
+}

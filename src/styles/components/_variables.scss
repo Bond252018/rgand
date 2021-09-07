@@ -1,0 +1,44 @@
+//Path
+
+$path-fonts: '../fonts/';
+$path-img: '../images/';
+
+//Fonts
+$arial: Arial, sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+
+//Colors
+$black: #000;
+$white: #fff;
+
+$light-blue-bg: #eef2f6;
+$light-bg: #f8f8f8;
+$grey: #aaa;
+$dark-grey: #434343;
+
+$green: #1bd2b9;
+
+$footer-bg: $dark-grey;
+
+//Default settings
+$default-font: $roboto;
+$default-font-size: 16px;
+$default-line-height: 28px;
+$default-font-weight: 400;
+$default-font-style: normal;
+$default-text-color: $black;
+$text-color-inverse: $white;
+
+$brand-color: $green;
+$body-bg: $white;
+
+
+$md-max: 'screen and (max-width: #{$screen-lg - 1})';
+$md-min: 'screen and (min-width: #{$screen-md})';
+$sm-max: 'screen and (max-width: #{$screen-md - 1})';
+$sm-min: 'screen and (min-width: #{$screen-sm})';
+$xs-max: 'screen and (max-width: #{$screen-sm - 1})';
+$xs-min: 'screen and (min-width: #{$screen-xs})';
+$xm-max: 'screen and (max-width: 479px)';
+$xm-min: 'screen and (min-width: 480px)';

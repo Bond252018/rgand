@@ -1,0 +1,19 @@
+.btn {
+	text-transform: uppercase;
+	padding: 13px 50px;
+	transition: background .25s;
+	font-size: 20px;
+	border-radius: 4px;
+
+	&.btn-primary {
+		background: $brand-color;
+		color: $white;
+		border: none;
+
+		&:hover,
+		&:focus,
+		&:hover:focus {
+			background: darken($brand-color, 10%);
+		}
+	}
+}

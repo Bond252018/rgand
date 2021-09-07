@@ -1,0 +1,18 @@
+.search-form {
+	position: relative;
+
+	.form-control {
+		border: 1px solid #d0d0d0;
+		height: 55px;
+		border-radius: 2px;
+		padding: 0 92px 0 10px;
+	}
+
+	.btn {
+		position: absolute;
+		right: 0;
+		top: 0;
+		text-transform: none;
+		padding: 14px 22px 13px;
+	}
+}
